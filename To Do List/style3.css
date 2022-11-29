@@ -1,0 +1,175 @@
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Fira sans", sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	color: #FFF;
+	background-color: lightgreen;
+}
+
+header {
+	padding: 2rem 1rem;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+.headings{
+	display: flex;
+	justify-content: space-between ;
+	max-width: 800px;
+}
+.header h1{ 
+	font-size: 2.5rem;
+	font-weight: 300;
+	color: red;
+	margin-bottom: 1rem;
+}
+
+#new-task-form {
+	display: flex;;
+}
+input{
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+}
+
+#new-task-input {
+	flex: 1 1 0%;
+	background-color: darkblue;
+	padding: 1rem;
+	color: lightgreen;
+	border-radius: 1rem;
+	margin-right: 1rem;
+	font-size: 1.25rem;
+}
+#new-task-desc{
+	flex: 3 3 1%;
+	background-color: darkblue;
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-right: 1rem;
+	color: lightgreen;
+	font-size: 1.25rem;
+}
+#new-task-input::placeholder {
+	color: lightgreen;
+}
+#new-task-desc::placeholder {
+	color: lightgreen;
+}
+
+#new-task-submit {
+	font-size: 1.25rem;
+	font-weight: 700;
+	color: red;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+ main {
+	flex: 1 1 0%;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.task-list {
+	padding: 1rem;
+}
+
+.task-list h2 {
+	font-size: 1.5rem;
+	font-weight: 300;
+	color: red;
+	margin-bottom: 1rem;
+}
+
+#tasks .task {
+	display: flex;
+	justify-content: space-between;
+	background-color: darkblue;
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+}
+
+.task .content {
+	flex: 1 1 0%;
+}
+
+.task .content .text {
+	color: lightgreen;
+	font-size: 1.125rem;
+	width: 100%;
+	display: flex;
+	transition: 0.4s;
+}
+
+.task .content .text:not(:read-only) {
+	color: lightgreen;
+}
+.task .text1 input{
+	color: lightgreen; 
+	font-size: 1.125rem;
+	width: 100%;
+}
+.task .text1 .text2 :not(:read-only) {
+	color: lightgreen;
+}
+
+.task .actions {
+	display: flex;
+	margin: 0 -0.5rem;
+}
+
+.task .actions button {
+	cursor: pointer;
+	margin: 0 0.5rem;
+	font-size: 1.125rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: 0.4s;
+}
+
+.task .actions button:hover {
+	opacity: 0.8;
+}
+
+.task .actions button:active {
+	opacity: 0.6;
+}
+
+.task .actions .edit {
+color: lightgreen;
+background-color: red;
+}
+
+.task .actions .delete {
+	color: lightgreen;
+background-color: red;
+}
+.task .actions .finish {
+	color: lightgreen;
+background-color: red;
+}
+
+.task .actions .save {
+	color: lightgreen;
+background-color: red;
+}
+#completed .task{
+	display: flex;
+	justify-content: space-between;
+	background-color: darkblue;
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+}
